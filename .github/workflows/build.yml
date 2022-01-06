@@ -47,9 +47,9 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/getstarted:latest
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/getstarted:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/getstarted:buildcache,mode=max
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/getstarted1:latest
+          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/getstarted1:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/getstarted1:buildcache,mode=max
 # name: Build
 # on: [push, pull_request]
 # jobs:
